@@ -1,1 +1,1 @@
-wb : ./bin/odb
+cs : /opt/odb/bin/odb
