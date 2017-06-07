@@ -1,1 +1,1 @@
-watch: ./bin/odb
+w: ./bin/odb
