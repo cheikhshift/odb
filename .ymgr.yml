@@ -1,4 +1,3 @@
---- 
 after: 
   - "mv bin/odb /usr/bin/odb"
 before: 
