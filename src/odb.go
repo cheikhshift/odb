@@ -158,11 +158,11 @@ func GetFiles(path string) (ret []string) {
 }
 
 func RecuWatch(dir string, out chan notify.EventInfo){
-	 files, _ := ioutil.ReadDir( dir )
+	// files, _ := ioutil.ReadDir( dir )
 	    go Watch(dir, out);
-			    for _, f := range files {
+			    /*  for _, f := range files {
 			    	//fmt.Println(f.Name())
-			    	if f.IsDir() {
+			  	if f.IsDir() {
 			    		if f.Name() != "backups-appe" {
 				    		dirx := Directory{}
 				    		dirx.Path = dir + "/" + f.Name()
@@ -170,7 +170,7 @@ func RecuWatch(dir string, out chan notify.EventInfo){
 				    	 	go RecuWatch(dirx.Path, out)
 			    	 	}
 			    	} 
-			}
+			} */
 	
 }
 
@@ -259,9 +259,10 @@ func Backup( dir string,ei notify.EventInfo , out chan notify.EventInfo){
 		//direct upload
 		  log.Println("\x1b[34;1m", "Backing up file",  ei.Path(), "\x1b[0m");
 		 	slc := strings.Split(ei.Path(), "/")
-		  exis , _ := exists("backups-appe/" + ( slc[len(slc) - 1] ))
+		 	
+		  exis , _ := exists("backups-appe/" +   ( slc[len(slc) - 1] ))
 		  if !exis {
-		  	os.MkdirAll("backups-appe/" + ( slc[len(slc) - 1] ),0777);
+		  	os.MkdirAll("backups-appe/"  + ( slc[len(slc) - 1] ),0777);
 		  }
 		  t := time.Now()
 		  Copy("backups-appe/" + ( slc[len(slc) - 1] ) + "/" + t.String(), ei.Path() )

@@ -1,0 +1,20 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "GiszxKrNs2KWQSgGeP598Unavb4=",
+			"path": "github.com/rjeczalik/notify",
+			"revision": "88a54d914928e1faebb1c2195605dc87bd98dc27",
+			"revisionTime": "2017-06-01T08:19:37Z"
+		},
+		{
+			"checksumSHA1": "4t38rpjTv5UgjxMMFKn4ad+DhU8=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "b90f89a1e7a9c1f6b918820b3daa7f08488c8594",
+			"revisionTime": "2017-05-29T13:44:53Z"
+		}
+	],
+	"rootPath": "odb"
+}
+

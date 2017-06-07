@@ -1,0 +1,15 @@
+ {
+	"ImportPath": "odb",
+	"GoVersion": "go1.5",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/rjeczalik/notify",
+			"Rev": "660542b98f76c58910002c82e912b71248f4daa0"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "b90f89a1e7a9c1f6b918820b3daa7f08488c8594"
+		}
+	]
+}
