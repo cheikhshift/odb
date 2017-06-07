@@ -1,3 +1,2 @@
 --- 
-after_install: 
-  - "mv bin/odb /usr/bin/odb"
+cli: bin/odb
