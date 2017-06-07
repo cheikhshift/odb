@@ -1,4 +1,5 @@
-	before:
-	  - mv packager/Procfile .
-	after:
-	  - mv bin/odb /usr/bin/odb
+--- 
+after: 
+  - "mv bin/odb /usr/bin/odb"
+before: 
+  - "mv packager/Procfile ."
