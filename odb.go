@@ -275,15 +275,13 @@ func main() {
 	//session := LoadSession()
 	//fmt.Println(os.Args);
 	if len(os.Args) > 1 {
-	 if os.Args[1] == "watch" {
-
-		if(len(os.Args ) == 3  ){
+	
 			
 				
 					//connect and watch //create channel
 					ch := make(chan notify.EventInfo)
 					
-					go RecuWatch(os.Args[2],ch)
+					go RecuWatch(os.Args[1],ch)
 				
 					for _= range ch {
 				       // log.Println("\x1b[33;1m",i, "\x1b[0m")
@@ -291,19 +289,12 @@ func main() {
 
 			
 			
-		}  else {
-			fmt.Println("Missing watch parameters. Usage :")
-			fmt.Println("odb watch <folder_alias>");
-			
-		} 
-
-	} else {
-		fmt.Println("Usage: odb watch <folder_alias> ")
-	}
+	
+	
 
 
 	} else {
-		fmt.Println("Usage: odb watch <folder_alias> ")
+		fmt.Println("Usage: odb run watch <folder_alias> ")
 	}
 
 }
