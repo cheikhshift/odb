@@ -294,7 +294,7 @@ func main() {
 
 
 	} else {
-		fmt.Println("Usage: odb run watch <folder_alias> ")
+		fmt.Println("Usage: odb run wb <folder_alias> ")
 	}
 
 }

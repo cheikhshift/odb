@@ -1,1 +1,1 @@
-w: ./bin/odb
+wb : bin/odb
